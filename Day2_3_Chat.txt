@@ -1,5 +1,20 @@
 Day 3:
 
+First protractor Script:
+
+import { browser, element, by } from "protractor";
+
+describe("Protractor Suite", function() {
+   it("Basic Spec", function() {
+       browser.get("https://www.angularjs.org/");
+       element(by.model('yourName')).sendKeys("Ameya");
+       browser.sleep(5000);
+       expect(element(by.binding('yourName')).getText()).toEqual('Hello Ameya!');
+   }) 
+}); 
+
+
+
 Day 2 Recap:
 
 - tsc -w (For watching ts files in the folder and converting them to js automatically)
