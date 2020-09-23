@@ -1,0 +1,22 @@
+{
+  "name": "protractorwithjasmine",
+  "version": "1.0.0",
+  "description": "This is a Protractor Setup Package.json created for TIAA Sep 2020 workshop",
+  "main": "conf.js",
+  "dependencies": {
+    "jasmine": "^3.6.1",
+    "jasmine-spec-reporter": "^6.0.0",
+    "protractor": "^7.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "protractor conf.js"
+  },
+  "keywords": [
+    "protractor",
+    "jasmine",
+    "typescript"
+  ],
+  "author": "Ameya Naik (DestinationQA)",
+  "license": "Apache-2.0"
+}
