@@ -1,5 +1,25 @@
 Day 3:
 
+Conf.js file with third-party reporter:
+
+exports.config = {
+    //seleniumAddress: 'http://localhost:4444/wd/hub',
+    specs: ['spec/Basics-spec.js'],
+    directConnect: true,
+    onPrepare: function() {
+        const Reporter = require('jasmine-spec-reporter').SpecReporter;
+        jasmine.getEnv().addReporter(new Reporter(
+            {
+                spec: {
+                    displayStacktrace: true
+                }
+            }
+        ));
+    }
+}
+
+
+
 First protractor Script:
 
 import { browser, element, by } from "protractor";
